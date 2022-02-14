@@ -18,10 +18,10 @@ def prepare_data(df):
   return X, y
   
 
-def save_model(model, filename):
+def save_model(model, file_name):
   model_dir = 'models'
   os.makedirs(model_dir, exist_ok=True) # only create if model_dir doesnt exist
-  file_path = os.path.join(model_dir, filename) # model/filename
+  file_path = os.path.join(model_dir, file_name) # model/filename
   joblib.dump(model, file_path)
 
 
